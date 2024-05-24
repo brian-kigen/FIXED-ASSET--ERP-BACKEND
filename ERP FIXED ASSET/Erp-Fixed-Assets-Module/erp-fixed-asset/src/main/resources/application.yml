@@ -1,0 +1,24 @@
+server:
+  port: 8000
+
+spring:
+  datasource:
+    username: root
+    password:
+    url: jdbc:mysql://localhost:3306/erp
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  main:
+    allow-circular-references: true
+
+jwt:
+  secret: dcm334fdcdSDDVFK34TV94MV23459tjgj5848qweed49vm1234t5gv5bf834JCVFGRJT4V9VMVKFGJIDOSE8RU98V539T8934TUFV489
+  expiration: 3600000  # Token validity in milliseconds (1 hour in this case)
+
+
